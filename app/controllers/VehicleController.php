@@ -51,7 +51,7 @@ class VehicleController {
         require $file;
         $vehiculos = constant('VEHICULOS');
 
-        //hago un array que llenare de objetos,dependiendo del tipo sera con un consturctos u otro
+        //hago un array que llenare de objetos,dependiendo del tipo sera con un consturctor u otro
         $resultado = [];
         foreach ($vehiculos as $v) {
             if (($v['tipo'] ?? null) === 'coche') {
